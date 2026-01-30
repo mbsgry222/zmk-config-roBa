@@ -40,11 +40,6 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
@@ -87,13 +82,13 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_HENKAN      &kp BACKSPACE    &lt 1 ENTER                             &lt_to_layer_0 6 DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         NUM_FUNK {
             bindings = <
 &kp F1   &kp F2   &kp F3   &kp F4  &kp F5                                      &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS
-&kp F6   &kp F7   &kp F8   &kp F9  &kp F10  &trans      &kp LEFT_PARENTHESIS   &kp KP_EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK
+&kp F6   &kp F7   &kp F8   &kp F9  &kp F10  &trans      &kp LEFT_PARENTHESIS   &kp EQUAL     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_ASTERISK
 &kp F11  &kp F12  &kp F13  &trans  &trans   &trans      &kp RIGHT_PARENTHESIS  &kp KP_MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_SLASH
 &trans   &trans   &trans   &trans  &trans   &trans      &trans                 &trans                                                  &kp KP_COMMA
             >;
