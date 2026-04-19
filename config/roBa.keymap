@@ -84,6 +84,18 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        PPT_NewTextBox: PPT_NewTextBox {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_ALT>,
+                <&macro_wait_time 40>,
+                <&kp N &kp>,
+                <&macro_press>;
+
+            label = "PPT_NEWTEXTBOX";
+        };
     };
 
     behaviors {
@@ -122,10 +134,10 @@
 
         SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &kp CARET             &kp AMPERSAND          &kp TILDE       &kp DOLLAR         &kp INT_YEN
-&trans  &trans  &trans  &trans  &trans  &trans      &kp TILDE  &kp LEFT_BRACKET      &kp RBKT               &kp AT_SIGN     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
-&trans  &trans  &trans  &trans  &trans  &trans      &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans                                                                          &kp PIPE
+&trans  &trans  &trans  &trans  &kp LS(LA(LEFT_ARROW))                          &kp CARET             &kp AMPERSAND          &kp TILDE       &kp DOLLAR         &kp INT_YEN
+&trans  &trans  &trans  &trans  &kp LS(LA(RIGHT_ARROW))  &trans      &kp TILDE  &kp LEFT_BRACKET      &kp RBKT               &kp AT_SIGN     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans  &trans                   &trans      &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE
+&trans  &trans  &trans  &trans  &trans                   &trans      &trans     &trans                                                                          &kp PIPE
             >;
         };
 
