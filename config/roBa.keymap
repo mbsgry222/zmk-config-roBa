@@ -102,10 +102,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                            &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))      &kp COLON        &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB            &kp EXCLAMATION  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RSHFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INT_HENKAN  &lt 2 SPACE  &kp LC(SPACE)      &kp BACKSPACE    &lt 1 ENTER                             &lt_to_layer_0 6 DELETE
+&kp Q             &kp W         &kp E         &kp R          &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F          &kp G        &kp LS(LG(S))                    &kp COLON        &kp H        &kp J  &kp K      &kp L    &lt 4 MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B        &kp TAB                          &kp EXCLAMATION  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RSHFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LC(SPACE)  &lt 2 SPACE  &lt_to_layer_0 3 INT_HENKAN      &kp BACKSPACE    &lt 1 ENTER                             &lt_to_layer_0 6 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -122,10 +122,10 @@
 
         SYMBOL {
             bindings = <
-&kp MINUS     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                              &kp CARET             &kp AMPERSAND          &kp TILDE       &kp DOLLAR         &kp INT_YEN
-&kp SLASH     &kp NUMBER_4     &kp NUMBER_5     &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp TILDE  &kp LEFT_BRACKET      &kp RBKT               &kp AT_SIGN     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
-&kp NUMBER_0  &kp NUMBER_1     &kp NUMBER_2     &kp NUMBER_3     &kp PERIOD    &kp EQUAL                    &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE
-&trans        &trans           &trans           &trans           &trans        &trans                       &trans     &trans                                                                          &kp PIPE
+&trans  &trans  &trans  &trans  &trans                         &kp CARET             &kp AMPERSAND          &kp TILDE       &kp DOLLAR         &kp INT_YEN
+&trans  &trans  &trans  &trans  &trans  &trans      &kp TILDE  &kp LEFT_BRACKET      &kp RBKT               &kp AT_SIGN     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans  &trans  &trans      &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans                                                                          &kp PIPE
             >;
         };
 
