@@ -91,8 +91,11 @@
             bindings =
                 <&kp LEFT_ALT>,
                 <&macro_wait_time 40>,
-                <&kp N &kp>,
-                <&macro_press>;
+                <&kp N>,
+                <&macro_wait_time 20>,
+                <&kp X>,
+                <&macro_wait_time 20>,
+                <&kp H>;
 
             label = "PPT_NEWTEXTBOX";
         };
@@ -134,10 +137,10 @@
 
         SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &kp LS(LA(LEFT_ARROW))                          &kp CARET             &kp AMPERSAND          &kp TILDE       &kp DOLLAR         &kp INT_YEN
-&trans  &trans  &trans  &trans  &kp LS(LA(RIGHT_ARROW))  &trans      &kp TILDE  &kp LEFT_BRACKET      &kp RBKT               &kp AT_SIGN     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
-&trans  &trans  &trans  &trans  &trans                   &trans      &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE
-&trans  &trans  &trans  &trans  &trans                   &trans      &trans     &trans                                                                          &kp PIPE
+&trans  &trans  &trans  &trans           &kp LS(LA(LEFT_ARROW))                          &kp CARET             &kp AMPERSAND          &kp TILDE       &kp DOLLAR         &kp INT_YEN
+&trans  &trans  &trans  &PPT_NewTextBox  &kp LS(LA(RIGHT_ARROW))  &trans      &kp TILDE  &kp LEFT_BRACKET      &kp RBKT               &kp AT_SIGN     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans           &trans                   &trans      &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE
+&trans  &trans  &trans  &trans           &trans                   &trans      &trans     &trans                                                                          &kp PIPE
             >;
         };
 
